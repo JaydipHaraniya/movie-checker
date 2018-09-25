@@ -1,0 +1,13 @@
+<mat-card mat-ripple class="mat-ripple">
+  <img mat-card-md-image src="https://image.tmdb.org/t/p/w200{{result.poster_path}}" alt="Photo of a Shiba Inu">
+  <mat-card-header>
+    <mat-card-title>Title : {{result.original_title}}({{result.original_language}})</mat-card-title>
+    <mat-card-subtitle>Rating : {{result.vote_average}} / 5</mat-card-subtitle>
+  </mat-card-header>
+  <p class="releasedDate">Release Date : {{result.release_date}}</p>
+  <mat-card-content>
+    <p>
+      {{result.overview}}
+    </p>
+  </mat-card-content>
+</mat-card>
